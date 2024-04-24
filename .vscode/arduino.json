@@ -1,4 +1,5 @@
 {
     "board": "arduino:avr:uno",
-    "sketch": "Master-Arduino.ino"
+    "sketch": "Master-Arduino.ino",
+    "port": "COM7"
 }
