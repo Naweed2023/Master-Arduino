@@ -1,10 +1,10 @@
 // Headers and libraries
 #include <Arduino.h>
-//#include "Joystick.h"
+#include "Joystick.h"
 
 
 // Define the analog pin numbers for the joystick
-//Joystick joystick(A2, A3, 7);
+Joystick joystick(A2, A3, 7);
 
 
 
@@ -18,7 +18,7 @@ void setup() {
 void loop()
 {
     
-    //joystick.read();
-    //joystick.manualMove();
+    joystick.read();
+    joystick.manualMove();
 
 }

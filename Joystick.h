@@ -8,7 +8,7 @@
 
 
     MotorControl motorA(12, 3, 9, 10, 7, 6);
-    MotorControl motorB(13, 11, 8, 2, 5, 4);
+    //MotorControl motorB(13, 11, 8, 2, 5, 4);
 
 //class Joystick
 
@@ -59,29 +59,15 @@ void Joystick::manualMove()
     int JoyY = analogRead(_yPin);
     int JoyPress = digitalRead(_pressPin);
 
+
     if(JoyX >= 550){
-        int MotorXhoog = map(JoyX, 550, 1023, 0, 255);
-        motorB.move(0, MotorXhoog);
-
-        
-    }else if(JoyX <= 460){
-        int MotorXlaag = map(JoyX, 0, 460, 255, 0);
-        motorB.move(1, MotorXlaag);
-       
-       
-    }else{
-        motorB.move(2, 0);
-    }
-
-
-    if(JoyY >= 550){
-        int MotorYhoog = map(JoyY, 550, 1023, 0, 255);
-        motorA.move(0, MotorYhoog);
+        int MotorVoor = map(JoyX, 550, 1023, 0, 255);
+        motorA.move(1, MotorVoor);
         
        
-    }else if (JoyY <= 460){
-        int MotorYlaag = map(JoyY, 0, 460, 255, 0);
-        motorA.move(1, MotorYlaag);
+    }else if (JoyX <= 460){
+        int MotorAchter = map(JoyX, 0, 460, 255, 0);
+        motorA.move(0, MotorAchter);
        
     }else{
      motorA.move(2, 0);
