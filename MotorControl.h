@@ -1,5 +1,5 @@
 //Motor control header file
-// Created by: Odin Adema
+
 
 #ifndef MotorControl_h
 #define MotorControl_h

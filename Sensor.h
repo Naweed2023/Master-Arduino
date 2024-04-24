@@ -1,5 +1,5 @@
 //sensor header file
-// Created by: Odin Adema
+
 
 #ifndef Sensor_h
 #define Sensor_h

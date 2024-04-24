@@ -1,5 +1,5 @@
 //Joystick header file
-//Created by: Odin Adema
+
 
 #ifndef Joystick_h
 #define Joystick_h
