@@ -2,6 +2,8 @@
 #include <Arduino.h>
 #include "Joystick.h"
 
+// knop voor lampje 
+
 int pinknop = 10;
 int test = 0;
 
